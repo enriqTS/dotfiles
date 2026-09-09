@@ -6,7 +6,10 @@ if status is-interactive; and type -q keychain; and test -f ~/.ssh/gitlab_bluma
         ssh-add -l >/dev/null 2>&1
         if test $status -eq 2
             set -e SSH_AUTH_SOCK SSH_AGENT_PID
-            rm -f ~/.keychain/*-sh ~/.keychain/*.s
+            # `set` expands non-matching globs to nothing; a bare `rm` glob
+            # aborts with an error when the directory is empty.
+            set -l stale ~/.keychain/*-sh ~/.keychain/*.s
+            test (count $stale) -gt 0; and rm -f $stale
         end
     end
 
