@@ -14,3 +14,5 @@ set -Ux VISUAL code
 # Pi
 fish_add_path "/home/henrique/.local/share/pi-node/node-v22.23.2-linux-x64/bin"
 direnv hook fish | source
+
+javm init fish | source
