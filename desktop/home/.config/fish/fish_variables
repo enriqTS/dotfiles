@@ -1,5 +1,6 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ANDROID_AVD_HOME:/home/henrique/\x2econfig/\x2eandroid/avd
 SETUVAR --export ANDROID_HOME:/home/henrique/Android/Sdk
 SETUVAR --export EDITOR:vim
 SETUVAR --export SSH_AGENT_PID:9283
