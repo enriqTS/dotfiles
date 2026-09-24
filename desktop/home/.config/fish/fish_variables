@@ -3,7 +3,7 @@
 SETUVAR --export ANDROID_AVD_HOME:/home/henrique/\x2econfig/\x2eandroid/avd
 SETUVAR --export ANDROID_HOME:/home/henrique/Android/Sdk
 SETUVAR --export EDITOR:vim
-SETUVAR --export SSH_AGENT_PID:6995
+SETUVAR --export SSH_AGENT_PID:8926
 SETUVAR --export SSH_AUTH_SOCK:/home/henrique/\x2ekeychain/CjvpJmDc\x2es
 SETUVAR --export VISUAL:code
 SETUVAR __done_min_cmd_duration:10000
