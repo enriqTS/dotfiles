@@ -1,6 +1,5 @@
 -- Workspace rules wiki https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- Add your workspace rules here. Increment the workspace number as you go. Do not have duplicate workspaces.
-hl.workspace_rule({ workspace = "name:gaming", monitor = PRIMARY_MONITOR })
 
 -- Main monitor (DP-2): workspaces 1-10
 hl.workspace_rule({ workspace = "1", monitor = MONITOR1, default = true, persistent = true })
@@ -12,7 +11,7 @@ hl.workspace_rule({ workspace = "6", monitor = MONITOR1, default = true, persist
 hl.workspace_rule({ workspace = "7", monitor = MONITOR1, default = true, persistent = true })
 hl.workspace_rule({ workspace = "8", monitor = MONITOR1, default = true, persistent = true })
 hl.workspace_rule({ workspace = "9", monitor = MONITOR1, default = true, persistent = true })
-hl.workspace_rule({ workspace = "10", monitor = MONITOR1, default = true, persistent = true })
+hl.workspace_rule({ workspace = "10", monitor = MONITOR1, default = true, persistent = true, default_name = "gaming" }) -- dedicated gaming workspace
 
 -- Secondary ultrawide (DP-3): workspaces 11-20
 hl.workspace_rule({ workspace = "11", monitor = MONITOR2, default = true, persistent = true })
