@@ -102,3 +102,15 @@ hl.window_rule({
     },
     no_focus = true,
 })
+
+-- Awakened PoE Trade overlay: no blur/opacity/decorations over the game
+hl.window_rule({
+    match     = { class = "^(awakened-poe-trade)$" },
+    no_blur   = true,
+    opacity   = "1.0 override",
+    no_shadow = true,
+    decorate  = false,
+    no_anim   = true,
+    no_dim    = true,
+    rounding  = 0,
+})
