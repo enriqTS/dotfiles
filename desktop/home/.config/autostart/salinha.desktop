@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Salinha
+Exec="/home/henrique/Downloads/Salinha-x86_64.AppImage" --ao-ligar
+Icon=salinha
+X-GNOME-Autostart-enabled=true
